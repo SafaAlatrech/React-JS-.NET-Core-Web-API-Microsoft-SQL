@@ -1,0 +1,76 @@
+
+ 
+   Enable CORS : Cross Origin Resource Sharing : la politique d'origine croisée : 
+
+ Il s'agit d'une norme W3C qui permet à un serveur d'effectuer des appels inter-domaines à 
+ partir des domaines spécifiés, tout en rejetant les autres. Par défaut, en raison de la 
+ sécurité du navigateur, il empêche une page Web d'effectuer une requête Ajax de domaine vers
+ un autre domaine.
+
+   => Effectuer une requete Ajax de domaine (inter domaine) vers un autre domaine 
+   => Permet a un serveur d'effectuer des appels inter-domaines a un autre domaine
+
+  Lien : https://www.c-sharpcorner.com/article/cors-in-dotnet-core/#:~:
+  text=The%20full%20name%20of%20CORS,Ajax%20request%20to%20another%20domain. 
+
+
+   Serialisation : 
+
+     - Conversion d'un objet en un flux d'octets. 
+     - Pour stocker l'objet ou le transmettre a la memoire a une base de données ou a un fichier.
+
+     *Utilisations pour la sérialisation : 
+       Envoi de l'objet à une application distante à l'aide d'un service Web
+       Passer un objet d'un domaine à un autre
+       Passage d'un objet à travers un pare-feu sous forme de chaîne JSON ou XML
+       Maintien de la sécurité ou des informations spécifiques à l'utilisateur dans les applications
+  
+  La sérialisation JSON sérialise les propriétés publiques d'un objet dans une chaîne, un tableau d'octets ou un flux conforme à la spécification JSON RFC 8259
+
+    NB :  Le processus inverse est appelé désérialisation.
+
+
+ https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/serialization/
+
+      Using in c# : 
+
+
+       - Permet de spécfier des ressources à une classe à l'éxecution.
+       - les classes qui encapsulent des ressources non gérées, telles que les descripteurs de fichiers, 
+         les descripteurs graphiques ou la connexion à la base de données,
+         doivent être implémentées interface IDisposable. 
+
+    - L'instruction using fournit une syntaxe élégante pour instancier un objet 
+      IDisposable puis appeler sa méthode dispose dans un bloc finally.
+
+    SqlDataReader Class : 
+
+   Fournit un moyen de lire un flux de lignes en avant uniquement à partir d'une base de données SQL Server.
+  
+   => Cette classe ne peut pas être héritée.
+ 
+   https://docs.microsoft.com/en-us/dotnet/api/system.data.sqlclient.sqldatareader?view=dotnet-plat-ext-6.0
+
+   UseStaticFile :
+
+ L'application ASP.NET Core ne peut pas servir de fichiers statiques par défaut. 
+ Nous devons inclure Microsoft.AspNetCore.StaticFilesle middleware dans le pipeline de requête.
+
+   Request.Form Collection : 
+
+  La collection Form récupère les valeurs des éléments de formulaire publiés dans le corps de la requête HTTP, 
+  avec un formulaire utilisant la méthode POST.
+
+  FileStream Class : 
+
+  Fournit un flux pour un fichier, prenant en charge les opérations de lecture et d'écriture synchrones
+  et asynchrones.
+
+ ASP.NET Core Web Host : IWebHostEnvirnoment : 
+
+ Les applications ASP.NET Core configurent et lancent un hôte .
+ L'hôte est responsable du démarrage de l'application et de la gestion de sa durée de vie. 
+ Au minimum, l'hôte configure un serveur et un pipeline de traitement des demandes.
+ L'hôte peut également configurer la journalisation, 
+ l'injection de dépendances et la configuration.
+   

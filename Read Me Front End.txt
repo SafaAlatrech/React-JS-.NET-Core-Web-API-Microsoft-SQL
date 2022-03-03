@@ -1,0 +1,40 @@
+   
+    
+     map () : 
+
+   La méthode map() crée un nouveau tableau avec les résultats de l'appel d'une fonction fournie sur chaque élément du tableau appelant.
+
+  Exemple : 
+      const array1 = [1, 4, 9, 16];
+
+     // pass a function to map
+    const map1 = array1.map(x => x * 2);
+
+     console.log(map1);
+   // expected output: Array [2, 8, 18, 32]
+
+    JSON.stringfy() : 
+ 
+ La méthode JSON.stringify() convertit une valeur JavaScript en chaîne JSON. Optionnellement, 
+ elle peut remplacer des valeurs ou spécifier les propriétés à inclure si un tableau de propriétés a été fourni.
+
+  
+  API Fetch : 
+ 
+ L'API Fetch fournit une interface pour la récupération de ressources (e.g., à travers le réseau.)
+ Elle paraîtra familière à tout utilisateur de XMLHttpRequest, mais cette nouvelle API propose néanmoins un ensemble de 
+ fonctionnalités plus souples et plus puissantes.
+
+  Element.append() : 
+
+ La Element.append()méthode insère un ensemble d' Node bjets ou d' DOMStringobjets après le dernier enfant de Element. 
+ DOMStringles objets sont insérés en tant que Text nœuds équivalents.
+
+ ES6 | Array filter() Method : 
+
+  Le filtre Array() est une méthode intégrée, cette méthode crée un nouveau tableau avec des éléments qui suivent ou passent 
+  les critères et conditions donnés.Quelques exemples ont été mis en œuvre ci-dessous pour une meilleure compréhension du concept
+
+         Syntaxe:
+            var newArray = arr.filter(callback(element[, index[, array]]) 
+            [, thisArg])
